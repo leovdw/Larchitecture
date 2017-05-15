@@ -3428,7 +3428,7 @@ input[type="submit"].button {
 }
 
 .card-content {
-  padding: 1.5rem;
+  padding: 0.8rem;
 }
 
 .card-footer {
@@ -3458,7 +3458,7 @@ input[type="submit"].button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0.75rem;
+  padding: 0.65rem;
 }
 
 .card-footer-item:not(:last-child) {
