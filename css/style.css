@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+.about{
+    width: 75%;
+    margin: 0 auto;
+    float: left;
+}
+
+.card{
+    width:20%;
+    float: right;
+    right: 1%;
+    bottom: 2%;
+}
+
+.card .title{
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.nav.has-shadow {
+    background-color: black;
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1);
+}
+
+.nav-item img {
+    max-height: 10000000px;
+}
+.nav-item a, a.nav-item {
+    color: white;
+}
+
+.nav-item a.is-tab:hover, a.nav-item.is-tab:hover {
+    /* border-bottom-color: #00d1b2; */
+    /* border-top-color: transparent; */
+    color: white;}
+
+@media screen and (min-width: 1192px){}
+.nav-left, .nav-right {
+        -ms-flex-preferred-size: 0;
+        flex-basis: initial;
+}
