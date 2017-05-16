@@ -34,3 +34,10 @@
         -ms-flex-preferred-size: 0;
         flex-basis: initial;
 }}
+
+#formregion{
+    margin-left: 26%;
+}
+#paneltabsform{
+    min-width: 292px;
+}
