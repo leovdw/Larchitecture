@@ -40,9 +40,9 @@
 
 <!-- Section formulaire -->
 
-<p class="title has-text-centered" style="padding-top: 2%;">Formulaire de commande</p>
-<section class="section is-left" style="width: 40%">
-    <form method="post" action="formulaire.php">
+<p class="title has-text-centered" style="padding-top: 2%; ">Formulaire de commande</p>
+<form method="post" action="formulaire.php">
+<section class="section is-left" style="width: 45%; padding-left: 15%; float: left">
         <div class="field">
             <label class="label" for="raison-social">Raison social</label>
             <p class="control">
@@ -130,29 +130,32 @@
             <p class="control">
                 <input class="input" type="email" id="email2" name="email" placeholder="exemple@gmail.com" required>
             </p>
-
         </div>
-        <div class="field">
+    </section>
+    <section class="section is-right" style="width: 45%; padding-right: 15%; float: right">
+        <div>
+            <img src="img-content/revue-commande.jpg">
+        </div>
+        <div class="field" style="padding-top: 4%">
             <label class="label" for="zone-geo">Zone géographique</label>
             <p class="control">
-                <select id="zone-geo" name="zone-geo">
-                <optgroup label="zone-geo">
-
-                    <option value="zone1" selected>France métropolitaine</option>
-                    <option value="zone2">Europe</option>
-                    <option value="zone3">DOM</option>
-                    <option value="zone4">TOM</option>
-                </optgroup>
-            </select>
-        </p>
+                <span class="select">
+                    <select id="zone-geo" name="zone-geo">
+                        <option value="zone1" class="input" selected>France métropolitaine</option>
+                        <option value="zone2">Europe</option>
+                        <option value="zone3">DOM</option>
+                        <option value="zone4">TOM</option>
+                    </select>
+                </span>
+            </p>
         </div>
         <div class="field">
             <label class="label" for="revue">Choix de la revue</label>
             <p class="control">
-                <select id="revue" name="revue">
-                <optgroup label="revue">
+               <span class="select">
+                    <select id="revue" name="revue">
+                        <option value="284"> 284 </option>
 
-                    <option value="284"> 284 </option>
 						<option value="283"> 283 </option>
 						<option value="282"> 282 </option>
 						<option value="281"> 281 </option>
@@ -241,26 +244,118 @@
 						<option value="202"> 202 </option>
 						<option value="201"> 201 </option>
 						<option value="200"> 200 </option>
-                </optgroup>
-            </select>
-        </p>
+
+                    </select>
+                </span>
+            </p>
         </div>
         <div class="field">
             <label class="label" for="quantite">Quantité</label>
             <p class="control">
-                <select id="quantite" name="quantite">
-                <optgroup label="quantite">
-
-                    <option value="quantite1" selected>1</option>
-                    <option value="qunatite5">5</option>
-                    <option value="quantite10">10</option>
-                    <option value="quantite20">20</option>
-                </optgroup>
-            </select>
-        </p>
+                <span class="select">
+                    <select id="quantite" name="quantite">
+                        <option value="quantite1" selected>1</option>
+                        <option value="qunatite5">5</option>
+                        <option value="quantite10">10</option>
+                        <option value="quantite20">20</option>
+                    </select>
+                </span>
+            </p>
         </div>
+    </section>
+
+    <!-- Section tableau prix fdp -->
+    <section class="table is-bordered is-striped is-narrow section" style="width: 100%">
+        <p class="title is-4" style="clear: left">Tarif en euro</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Quantité</th>
+                    <th>1</th>
+                    <th>5</th>
+                    <th>10</th>
+                    <th>20</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>France</th>
+                    <td>19 € + 3 € (frais de port)</td>
+                    <td>75 € + 15 € (frais de port)</td>
+                    <td>155 € + 30 € (frais de port)</td>
+                    <td>240 € + 60 € (frais de port)</td>
+                </tr>
+                <tr>
+                    <th>DOM</th>
+                    <td>19 € + 8 € (frais de port)</td>
+                    <td>75 € + 30 € (frais de port)</td>
+                    <td>155 € + 60 € (frais de port)</td>
+                    <td>240 € + 80 € (frais de port)</td>
+                </tr>
+                <tr>
+                    <th>TOM</th>
+                    <td>19 € + 10 € (frais de port)</td>
+                    <td>75 € + 45 € (frais de port)</td>
+                    <td>155 € + 85 € (frais de port)</td>
+                    <td>240 € + 130 € (frais de port)</td>
+                </tr>
+                <tr>
+                    <th>Europe</th>
+                    <td>19 € + 8 € (frais de port)</td>
+                    <td>75 € + 30 € (frais de port)</td>
+                    <td>155 € + 60 € (frais de port)</td>
+                    <td>240 € + 80 € (frais de port)</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="title is-4">Tarif en franc Suisse</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Quantité</th>
+                    <th>1</th>
+                    <th>5</th>
+                    <th>10</th>
+                    <th>20</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>France</th>
+                    <td>22.99 CHF + 3.63 CHF (frais de port)</td>
+                    <td>90.75 CHF + 15 CHF (frais de port)</td>
+                    <td>187.55 CHF + 36.30 CHF (frais de port)</td>
+                    <td>290.40 CHF+ 72.60 CHF (frais de port)</td>
+                </tr>
+                <tr>
+                    <th>DOM</th>
+                    <td>22.99 CHF + 9.68 CHF (frais de port)</td>
+                    <td>90.75 CHF + 36.30 CHF (frais de port)</td>
+                    <td>187.55 CHF + 72.60 CHF (frais de port)</td>
+                    <td>290.40 CHF+  96.8 CHF (frais de port)</td>
+                </tr>
+                <tr>
+                    <th>TOM</th>
+                    <td>22.99 CHF + 12.10 CHF (frais de port)</td>
+                    <td>90.75 CHF + 15 CHF (frais de port)</td>
+                    <td>187.55 CHF + 102.85 CHF (frais de port)</td>
+                    <td>290.40 CHF+ 157.30 CHF (frais de port)</td>
+                </tr>
+                <tr>
+                    <th>Europe</th>
+                    <td>22.99 CHF + 9.68 CHF (frais de port)</td>
+                    <td>90.75 CHF + 36.30 CHF (frais de port)</td>
+                    <td>187.55 CHF + 72.60 CHF (frais de port)</td>
+                    <td>290.40 CHF+  96.8 CHF (frais de port)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div>
+        <input type="submit" name="validation" id="validation" value="Envoyer" class="button is-primary" style="display: block; margin: 0 auto; margin-bottom: 2%">
+    </div>
     </form>
-</section>
 
 </body>
 </html>
