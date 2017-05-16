@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Larchitecture - appel d'offre</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="nav has-shadow ">
+    <div class="nav-left">
+    <a class="nav-item">
+        <img src="img-layout/logo_larchitecture_sans_fond.png" alt="logo" style="width: 210px; height: 50px">
+    </a>
+</div>
+    <div class="container">
+
+        <span class="nav-toggle is-hidden-desktop nav-right">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </span>
+        <div class="nav-right nav-menu is-hidden-tablet-only">
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="index.html">Accueil</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="reveues.html">Nos Revues</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile">Commander</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="offre.html">Appel D'offre</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile">Contact</a>
+            <a class="nav-item is-tab is-hidden-tablet  is-active">Home</a>
+            <a class="nav-item is-tab is-hidden-tablet ">Features</a>
+            <a class="nav-item is-tab is-hidden-tablet ">Pricing</a>
+            <a class="nav-item is-tab is-hidden-tablet ">About</a>
+        </div>
+    </div>
+</nav>
+
+<p class="title has-text-centered" style="padding-top: 2%;">Formulaire de commande</p>
+<section class="section is-left" style="width: 40%">
+    <form action="#">
+
+        <div class="field">
+            <label class="label">Name</label>
+            <p class="control">
+                <input class="input" type="text" placeholder="Text input">
+            </p>
+        </div>
+    </form>
+</section>
+
+
+<!-- Section formulaire -->
+
+<p class="title has-text-centered" style="padding-top: 2%;">Formulaire de commande</p>
+<section class="section is-left" style="width: 40%">
+    <form method="post" action="formulaire.php">
+        <div class="field">
+            <label class="label" for="raison-social">Raison social</label>
+            <p class="control">
+                <input class="input" type="text" id="raison-social" name="raison-social" placeholder="Ex : SA">
+            </p>
+        </div>
+        <div class="field">
+            <label class="label" for="activite">Activité</label>
+            <p class="control">
+                <input class="input" type="text" id="activite" name="activite">
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="nom">Nom*</label>
+            <p class="control">
+                <input class="input" type="text" id="nom" name="nom" required>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="prenom">Prénom*</label>
+            <p class="control">
+                <input class="input" type="text" id="prenom" name="prenom" required>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="fonction">Fonction</label>
+            <p class="control">
+                <input class="input" type="text" id="fonction" name="fonction">
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="adresse">Adresse*</label>
+            <p class="control">
+                <input class="input" type="text" id="adresse" name="adresse" required>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="code-postal">Code postal*</label>
+            <p class="control">
+                <input class="input" type="text" id="code-postal" name="code-postal" required>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="ville">Ville*</label>
+            <p class="control">
+                <input class="input" type="text" id="ville" name="ville" required>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="pays">Pays*</label>
+            <p class="control">
+                <input class="input" type="text" id="pays" name="pays" required>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="telephone">Téléphone*</label>
+            <p class="control">
+                <input class="input" type="text" id="telephone" name="telephone" placeholder="0687202020" required>
+            </p>
+
+        </div>
+        <div class="field">
+            <label class="label" for="fax">Fax</label>
+            <p class="control">
+                <input class="input" type="text" id="fax" name="fax">
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label" for="email">Adresse e-mail</label>
+            <p class="control">
+                <input class="input" type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+            </p>
+        </div>
+        <div class="field">
+            <label class="label" for="email2">Vérifiez l'e-mail*</label>
+            <p class="control">
+                <input class="input" type="email" id="email2" name="email" placeholder="exemple@gmail.com" required>
+            </p>
+
+        </div>
+        <div class="field">
+            <label class="label" for="zone-geo">Zone géographique</label>
+            <p class="control">
+                <select id="zone-geo" name="zone-geo">
+                <optgroup label="zone-geo">
+
+                    <option value="zone1" selected>France métropolitaine</option>
+                    <option value="zone2">Europe</option>
+                    <option value="zone3">DOM</option>
+                    <option value="zone4">TOM</option>
+                </optgroup>
+            </select>
+        </p>
+        </div>
+        <div class="field">
+            <label class="label" for="revue">Choix de la revue</label>
+            <p class="control">
+                <select id="revue" name="revue">
+                <optgroup label="revue">
+
+                    <option value="284"> 284 </option>
+						<option value="283"> 283 </option>
+						<option value="282"> 282 </option>
+						<option value="281"> 281 </option>
+						<option value="280"> 280 </option>
+						<option value="279"> 279 </option>
+						<option value="278"> 278 </option>
+						<option value="277"> 277 </option>
+						<option value="276"> 276 </option>
+						<option value="275"> 275 </option>
+						<option value="274"> 274 </option>
+						<option value="273"> 273 </option>
+						<option value="272"> 272 </option>
+						<option value="271"> 271 </option>
+						<option value="270"> 270 </option>
+						<option value="270"> 270 </option>
+						<option value="269"> 269 </option>
+						<option value="268"> 268 </option>
+						<option value="267"> 267 </option>
+						<option value="266"> 266 </option>
+						<option value="265"> 265 </option>
+						<option value="264"> 264 </option>
+						<option value="264"> 264 </option>
+						<option value="263"> 263 </option>
+						<option value="262"> 262 </option>
+						<option value="261"> 261 </option>
+						<option value="260"> 260 </option>
+						<option value="259"> 259 </option>
+						<option value="258"> 258 </option>
+						<option value="257"> 257 </option>
+						<option value="256"> 256 </option>
+						<option value="255"> 255 </option>
+						<option value="254"> 254 </option>
+						<option value="253"> 253 </option>
+						<option value="252"> 252 </option>
+						<option value="251"> 251 </option>
+						<option value="250"> 250 </option>
+						<option value="249"> 249 </option>
+						<option value="249"> 249 </option>
+						<option value="248"> 248 </option>
+						<option value="245"> 245 </option>
+						<option value="244"> 244 </option>
+						<option value="243"> 243 </option>
+						<option value="242"> 242 </option>
+						<option value="241"> 241 </option>
+						<option value="240"> 240 </option>
+						<option value="239"> 239 </option>
+						<option value="238"> 238 </option>
+						<option value="238"> 238 </option>
+						<option value="237"> 237 </option>
+						<option value="236"> 236 </option>
+						<option value="235"> 235 </option>
+						<option value="234"> 234 </option>
+						<option value="233"> 233 </option>
+						<option value="232"> 232 </option>
+						<option value="231"> 231 </option>
+						<option value="230"> 230 </option>
+						<option value="229"> 229 </option>
+						<option value="228"> 228 </option>
+						<option value="227"> 227 </option>
+						<option value="226"> 226 </option>
+						<option value="225"> 225 </option>
+						<option value="223"> 223 </option>
+						<option value="222"> 222 </option>
+						<option value="221S"> 221S </option>
+						<option value="221N"> 221N </option>
+						<option value="220"> 220 </option>
+						<option value="219SM"> 219SM </option>
+						<option value="219SB"> 219SB </option>
+						<option value="218"> 218 </option>
+						<option value="217N"> 217N </option>
+						<option value="217N"> 217N </option>
+						<option value="216"> 216 </option>
+						<option value="215"> 215 </option>
+						<option value="214"> 214 </option>
+						<option value="213S"> 213S </option>
+						<option value="213N"> 213N </option>
+						<option value="211"> 211 </option>
+						<option value="210"> 210 </option>
+						<option value="209"> 209 </option>
+						<option value="208"> 208 </option>
+						<option value="207"> 207 </option>
+						<option value="206"> 206 </option>
+						<option value="205"> 205 </option>
+						<option value="204"> 204 </option>
+						<option value="203"> 203 </option>
+						<option value="202"> 202 </option>
+						<option value="201"> 201 </option>
+						<option value="200"> 200 </option>
+                </optgroup>
+            </select>
+        </p>
+        </div>
+        <div class="field">
+            <label class="label" for="quantite">Quantité</label>
+            <p class="control">
+                <select id="quantite" name="quantite">
+                <optgroup label="quantite">
+
+                    <option value="quantite1" selected>1</option>
+                    <option value="qunatite5">5</option>
+                    <option value="quantite10">10</option>
+                    <option value="quantite20">20</option>
+                </optgroup>
+            </select>
+        </p>
+        </div>
+    </form>
+</section>
+
+</body>
+</html>
