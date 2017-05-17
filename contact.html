@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Larchitecture</title>
+    <title>Larchitecture - contact</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bulma.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<!-- Section Nav -->
+
 <nav class="nav has-shadow ">
     <div class="nav-left">
-        <a class="nav-item" href="index.html">
-            <img src="img-layout/logo_larchitecture_sans_fond.png" alt="logo" style="width: 210px; height: 50px">
-        </a>
+    <a class="nav-item">
+        <img src="img-layout/logo_larchitecture_sans_fond.png" alt="logo" style="width: 210px; height: 50px">
+    </a>
     </div>
     <div class="container">
 
@@ -25,12 +25,12 @@
       <span></span>
     </span>
         <div class="nav-right nav-menu is-hidden-tablet-only">
-            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile navdestop " href="index.html">Accueil</a>
-            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile navdestop" href="reveues.html">Nos Revues</a>
-            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile navdestop" href="commande.html">Commander</a>
-            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile navdestop" href="offre.html">Appel D'offre</a>
-            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile navdestop is-active" href="contact.html">Contact</a>
-            <a class="nav-item is-tab is-hidden-tablet ">Home</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="index.html">Accueil</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="reveues.html">Nos Revues</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="commande.html">Commander</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile" href="offre.html">Appel D'offre</a>
+            <a class="nav-item is-tab is-hidden-tablet-only is-hidden-mobile is-active" href="contact.html">Contact</a>
+            <a class="nav-item is-tab is-hidden-tablet  is-active">Home</a>
             <a class="nav-item is-tab is-hidden-tablet ">Features</a>
             <a class="nav-item is-tab is-hidden-tablet ">Pricing</a>
             <a class="nav-item is-tab is-hidden-tablet ">About</a>
@@ -38,7 +38,71 @@
     </div>
 </nav>
 
+<!-- Section contact formulaire -->
+<p class="title has-text-centered" style="padding-top: 2%; ">Formulaire de contact</p>
+    <section class="section is-left" style="width: 30%; margin: 0 auto">
+        <form method="post" action="contact.php">
+            <div class="field">
+                <label class="label" for="raison-social">Raison social</label>
+                <p class="control">
+                    <input class="input" type="text" id="raison-social" name="raison-social" placeholder="Ex : SA">
+                </p>
+            </div>
+            <div class="field">
+                <label class="label" for="nom">Nom</label>
+                <p class="control">
+                    <input class="input" type="text" id="nom" name="nom" required>
+                </p>
+            </div>
+            <div class="field">
+                <label class="label" for="telephone">Téléphone</label>
+                <p class="control">
+                    <input class="input" type="text" id="telephone" name="telephone" placeholder="0687202020">
+                </p>
+            </div>
+            <div class="field">
+                <label class="label" for="email">Adresse e-mail</label>
+                <p class="control">
+                    <input class="input" type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+                </p>
+            </div>
+            <div class="field">
+                <label class="label" for="service">Service</label>
+                <p class="control">
+                    <span class="select">
+                        <select id="service" name="service">
+                            <option value="service1" selected>Commercial</option>
+                            <option value="service2">Rédactionnel / Publicité</option>
+                            <option value="service3">Administratif / Publicité</option>
+                            <option value="service4">Direction</option>
+                        </select>
+                    </span>
+                </p>
+            </div>
+            <div class="field">
+              <label class="label">Message</label>
+                  <p class="control">
+                    <textarea class="textarea" placeholder="Ecrivez-votre message ici" required></textarea>
+                  </p>
+            </div>
 
+            <div class="field is-grouped">
+              <p class="control" style="    padding-left: 26%;">
+                <button class="button is-primary is-left">Envoyer</button>
+              </p>
+              <p class="control">
+                <button class="button is-link is-pulled-left">Annuler</button>
+              </p>
+            </div>
+            <!-- <div>
+                <input type="submit" name="contact" id="contact" value="Envoyer" class="button is-primary" style="display: block; margin: 0 auto; margin-bottom: 2%">
+            </div> -->
+        </form>
+        <div class="hero-foot">
+            <p style="font-size: 10px; padding-top: 10%" class="has-text-centered">Groupe SOFRE&COM Société Française d'Edition et de Communication<br />
+            9/11 rue Jacquard - 93315 Le Pré Saint Gervais cedex - France
+            </p>
+        </div>
+    </section>
 </body>
-<script src="js.js"></script>
 </html>
