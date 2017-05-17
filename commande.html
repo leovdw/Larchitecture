@@ -11,7 +11,7 @@
 
 <nav class="nav has-shadow ">
     <div class="nav-left">
-    <a class="nav-item">
+    <a class="nav-item" href="index.html">
         <img src="img-layout/logo_larchitecture_sans_fond.png" alt="logo" style="width: 210px; height: 50px">
     </a>
 </div>
@@ -41,8 +41,10 @@
 <!-- Section formulaire -->
 
 <p class="title has-text-centered" style="padding-top: 2%;">Formulaire de commande</p>
-<section class="section is-left" style="width: 40%">
-    <form method="post" action="formulaire.php">
+
+<form method="post" action="formulaire.php">
+
+<section class="section is-left" style="width: 40%; float: left;    padding-left: 7%;">
         <div class="field">
             <label class="label" for="raison-social">Raison social</label>
             <p class="control">
@@ -119,23 +121,30 @@
             </p>
         </div>
 
-        <div class="field">
-            <label class="label" for="email">Adresse e-mail</label>
-            <p class="control">
-                <input class="input" type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
-            </p>
-        </div>
-        <div class="field">
-            <label class="label" for="email2">Vérifiez l'e-mail*</label>
-            <p class="control">
-                <input class="input" type="email" id="email2" name="email" placeholder="exemple@gmail.com" required>
-            </p>
 
-        </div>
-        <div class="field">
-            <label class="label" for="zone-geo">Zone géographique</label>
-            <p class="control">
-                <select id="zone-geo" name="zone-geo">
+
+
+</section>
+<section class="section is-right" style="margin-top: 4%;float: right;width: 40%;     margin-right: 10%;">
+
+    <img src="img-content/couv_267.jpg" alt="Couv" style="width: 60%; margin: 0 auto; margin-left: 16%">
+    <div class="field" style="padding-top: 5%">
+        <label class="label" for="email">Adresse e-mail</label>
+        <p class="control">
+            <input class="input" type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
+        </p>
+    </div>
+    <div class="field">
+        <label class="label" for="email2">Vérifiez l'e-mail*</label>
+        <p class="control">
+            <input class="input" type="email" id="email2" name="email" placeholder="exemple@gmail.com" required>
+        </p>
+
+    </div>
+    <div class="field">
+        <label class="label" for="zone-geo">Zone géographique</label>
+        <p class="control">
+            <select id="zone-geo" name="zone-geo">
                 <optgroup label="zone-geo">
 
                     <option value="zone1" selected>France métropolitaine</option>
@@ -145,112 +154,111 @@
                 </optgroup>
             </select>
         </p>
-        </div>
-        <div class="field">
-            <label class="label" for="revue">Choix de la revue</label>
-            <p class="control">
-                <select id="revue" name="revue">
+    </div>
+    <div class="field">
+        <label class="label" for="revue">Choix de la revue</label>
+        <p class="control">
+            <select id="revue" name="revue">
                 <optgroup label="revue">
 
                     <option value="284"> 284 </option>
-						<option value="283"> 283 </option>
-						<option value="282"> 282 </option>
-						<option value="281"> 281 </option>
-						<option value="280"> 280 </option>
-						<option value="279"> 279 </option>
-						<option value="278"> 278 </option>
-						<option value="277"> 277 </option>
-						<option value="276"> 276 </option>
-						<option value="275"> 275 </option>
-						<option value="274"> 274 </option>
-						<option value="273"> 273 </option>
-						<option value="272"> 272 </option>
-						<option value="271"> 271 </option>
-						<option value="270"> 270 </option>
-						<option value="270"> 270 </option>
-						<option value="269"> 269 </option>
-						<option value="268"> 268 </option>
-						<option value="267"> 267 </option>
-						<option value="266"> 266 </option>
-						<option value="265"> 265 </option>
-						<option value="264"> 264 </option>
-						<option value="264"> 264 </option>
-						<option value="263"> 263 </option>
-						<option value="262"> 262 </option>
-						<option value="261"> 261 </option>
-						<option value="260"> 260 </option>
-						<option value="259"> 259 </option>
-						<option value="258"> 258 </option>
-						<option value="257"> 257 </option>
-						<option value="256"> 256 </option>
-						<option value="255"> 255 </option>
-						<option value="254"> 254 </option>
-						<option value="253"> 253 </option>
-						<option value="252"> 252 </option>
-						<option value="251"> 251 </option>
-						<option value="250"> 250 </option>
-						<option value="249"> 249 </option>
-						<option value="249"> 249 </option>
-						<option value="248"> 248 </option>
-						<option value="245"> 245 </option>
-						<option value="244"> 244 </option>
-						<option value="243"> 243 </option>
-						<option value="242"> 242 </option>
-						<option value="241"> 241 </option>
-						<option value="240"> 240 </option>
-						<option value="239"> 239 </option>
-						<option value="238"> 238 </option>
-						<option value="238"> 238 </option>
-						<option value="237"> 237 </option>
-						<option value="236"> 236 </option>
-						<option value="235"> 235 </option>
-						<option value="234"> 234 </option>
-						<option value="233"> 233 </option>
-						<option value="232"> 232 </option>
-						<option value="231"> 231 </option>
-						<option value="230"> 230 </option>
-						<option value="229"> 229 </option>
-						<option value="228"> 228 </option>
-						<option value="227"> 227 </option>
-						<option value="226"> 226 </option>
-						<option value="225"> 225 </option>
-						<option value="223"> 223 </option>
-						<option value="222"> 222 </option>
-						<option value="221S"> 221S </option>
-						<option value="221N"> 221N </option>
-						<option value="220"> 220 </option>
-						<option value="219SM"> 219SM </option>
-						<option value="219SB"> 219SB </option>
-						<option value="218"> 218 </option>
-						<option value="217N"> 217N </option>
-						<option value="217N"> 217N </option>
-						<option value="216"> 216 </option>
-						<option value="215"> 215 </option>
-						<option value="214"> 214 </option>
-						<option value="213S"> 213S </option>
-						<option value="213N"> 213N </option>
-						<option value="211"> 211 </option>
-						<option value="210"> 210 </option>
-						<option value="209"> 209 </option>
-						<option value="208"> 208 </option>
-						<option value="207"> 207 </option>
-						<option value="206"> 206 </option>
-						<option value="205"> 205 </option>
-						<option value="204"> 204 </option>
-						<option value="203"> 203 </option>
-						<option value="202"> 202 </option>
-						<option value="201"> 201 </option>
-						<option value="200"> 200 </option>
+                    <option value="283"> 283 </option>
+                    <option value="282"> 282 </option>
+                    <option value="281"> 281 </option>
+                    <option value="280"> 280 </option>
+                    <option value="279"> 279 </option>
+                    <option value="278"> 278 </option>
+                    <option value="277"> 277 </option>
+                    <option value="276"> 276 </option>
+                    <option value="275"> 275 </option>
+                    <option value="274"> 274 </option>
+                    <option value="273"> 273 </option>
+                    <option value="272"> 272 </option>
+                    <option value="271"> 271 </option>
+                    <option value="270"> 270 </option>
+                    <option value="270"> 270 </option>
+                    <option value="269"> 269 </option>
+                    <option value="268"> 268 </option>
+                    <option value="267"> 267 </option>
+                    <option value="266"> 266 </option>
+                    <option value="265"> 265 </option>
+                    <option value="264"> 264 </option>
+                    <option value="264"> 264 </option>
+                    <option value="263"> 263 </option>
+                    <option value="262"> 262 </option>
+                    <option value="261"> 261 </option>
+                    <option value="260"> 260 </option>
+                    <option value="259"> 259 </option>
+                    <option value="258"> 258 </option>
+                    <option value="257"> 257 </option>
+                    <option value="256"> 256 </option>
+                    <option value="255"> 255 </option>
+                    <option value="254"> 254 </option>
+                    <option value="253"> 253 </option>
+                    <option value="252"> 252 </option>
+                    <option value="251"> 251 </option>
+                    <option value="250"> 250 </option>
+                    <option value="249"> 249 </option>
+                    <option value="249"> 249 </option>
+                    <option value="248"> 248 </option>
+                    <option value="245"> 245 </option>
+                    <option value="244"> 244 </option>
+                    <option value="243"> 243 </option>
+                    <option value="242"> 242 </option>
+                    <option value="241"> 241 </option>
+                    <option value="240"> 240 </option>
+                    <option value="239"> 239 </option>
+                    <option value="238"> 238 </option>
+                    <option value="238"> 238 </option>
+                    <option value="237"> 237 </option>
+                    <option value="236"> 236 </option>
+                    <option value="235"> 235 </option>
+                    <option value="234"> 234 </option>
+                    <option value="233"> 233 </option>
+                    <option value="232"> 232 </option>
+                    <option value="231"> 231 </option>
+                    <option value="230"> 230 </option>
+                    <option value="229"> 229 </option>
+                    <option value="228"> 228 </option>
+                    <option value="227"> 227 </option>
+                    <option value="226"> 226 </option>
+                    <option value="225"> 225 </option>
+                    <option value="223"> 223 </option>
+                    <option value="222"> 222 </option>
+                    <option value="221S"> 221S </option>
+                    <option value="221N"> 221N </option>
+                    <option value="220"> 220 </option>
+                    <option value="219SM"> 219SM </option>
+                    <option value="219SB"> 219SB </option>
+                    <option value="218"> 218 </option>
+                    <option value="217N"> 217N </option>
+                    <option value="217N"> 217N </option>
+                    <option value="216"> 216 </option>
+                    <option value="215"> 215 </option>
+                    <option value="214"> 214 </option>
+                    <option value="213S"> 213S </option>
+                    <option value="213N"> 213N </option>
+                    <option value="211"> 211 </option>
+                    <option value="210"> 210 </option>
+                    <option value="209"> 209 </option>
+                    <option value="208"> 208 </option>
+                    <option value="207"> 207 </option>
+                    <option value="206"> 206 </option>
+                    <option value="205"> 205 </option>
+                    <option value="204"> 204 </option>
+                    <option value="203"> 203 </option>
+                    <option value="202"> 202 </option>
+                    <option value="201"> 201 </option>
+                    <option value="200"> 200 </option>
                 </optgroup>
             </select>
         </p>
-        </div>
-        <div class="field">
-            <label class="label" for="quantite">Quantité</label>
-            <p class="control">
-                <select id="quantite" name="quantite">
+    </div>
+    <div class="field">
+        <label class="label" for="quantite">Quantité</label>
+        <p class="control">
+            <select id="quantite" name="quantite">
                 <optgroup label="quantite">
-
                     <option value="quantite1" selected>1</option>
                     <option value="qunatite5">5</option>
                     <option value="quantite10">10</option>
@@ -258,9 +266,95 @@
                 </optgroup>
             </select>
         </p>
-        </div>
-    </form>
+    </div>
+    <button class="button  is-outlined" type="submit" style="margin-left: -28%;width: 22%;height: 34px;">Envoyer</button>
 </section>
+</form>
+    <!-- Section tableau prix fdp -->
+    <section class="table is-bordered is-striped is-narrow section" style="width: 100%">
+            <p class="title is-4" style="clear: left">Tarif en euro</p>
+            <table class="table">
+                <thead>
+                <tr>
+                       <th>Quantité</th>
+                        <th>1</th>
+                        <th>5</th>
+                        <th>10</th>
+                        <th>20</th>
+                    </tr>
+            </thead>
+                <tbody>
+                <tr>
+                        <th>France</th>
+                        <td>19 € + 3 € (frais de port)</td>
+                        <td>75 € + 15 € (frais de port)</td>
+                        <td>155 € + 30 € (frais de port)</td>
+                        <td>240 € + 60 € (frais de port)</td>
+                    </tr>
+                <tr>
+                        <th>DOM</th>
+                        <td>19 € + 8 € (frais de port)</td>
+                        <td>75 € + 30 € (frais de port)</td>
+                        <td>155 € + 60 € (frais de port)</td>
+                        <td>240 € + 80 € (frais de port)</td>
+                    </tr>
+                <tr>
+                        <th>TOM</th>
+                        <td>19 € + 10 € (frais de port)</td>
+                        <td>75 € + 45 € (frais de port)</td>
+                        <td>155 € + 85 € (frais de port)</td>
+                        <td>240 € + 130 € (frais de port)</td>
+                    </tr>
+               <tr>
+                        <th>Europe</th>
+                        <td>19 € + 8 € (frais de port)</td>
+                        <td>75 € + 30 € (frais de port)</td>
+                        <td>155 € + 60 € (frais de port)</td>
+                        <td>240 € + 80 € (frais de port)</td>
+</tr>
+           </tbody>
+            </table>
+
+            <p class="title is-4">Tarif en franc Suisse</p>
+            <table class="table">
+                <thead>
+                <tr>
+                        <th>Quantité</th>
+                        <th>1</th>
+                        <th>5</th>
+                        <th>10</th>
+                        <th>20</th>
+                    </tr>
+            </thead>
+                <tbody><tr>
+                    <th>France</th>
+                    <td>22.99 CHF + 3.63 CHF (frais de port)</td>
+                    <td>90.75 CHF + 15 CHF (frais de port)</td>
+                    <td>187.55 CHF + 36.30 CHF (frais de port)</td>
+                    <td>290.40 CHF+ 72.60 CHF (frais de port)</td>
+                </tr><tr>
+                    <th>DOM</th>
+                    <td>22.99 CHF + 9.68 CHF (frais de port)</td>
+                    <td>90.75 CHF + 36.30 CHF (frais de port)</td>
+                    <td>187.55 CHF + 72.60 CHF (frais de port)</td>
+                    <td>290.40 CHF+  96.8 CHF (frais de port)</td>
+                </tr><tr>
+                        <th>TOM</th>
+                        <td>22.99 CHF + 12.10 CHF (frais de port)</td>
+                        <td>90.75 CHF + 15 CHF (frais de port)</td>
+                        <td>187.55 CHF + 102.85 CHF (frais de port)</td>
+                        <td>290.40 CHF+ 157.30 CHF (frais de port)</td>
+                    </tr>
+                <tr>
+                        <th>Europe</th>
+                        <td>22.99 CHF + 9.68 CHF (frais de port)</td>
+                        <td>90.75 CHF + 36.30 CHF (frais de port)</td>
+                        <td>187.55 CHF + 72.60 CHF (frais de port)</td>
+                        <td>290.40 CHF+  96.8 CHF (frais de port)</td>
+                    </tr>
+            </tbody>
+            </table>
+        </section>
 
 </body>
 </html>
