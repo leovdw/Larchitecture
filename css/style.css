@@ -41,3 +41,68 @@
 #paneltabsform{
     min-width: 278px;
 }
+
+.displayres{
+    width: 78%; float: right;padding-left: 0;margin-right: -3%;
+}
+
+.frumres{
+    width: 0%; float: left;    margin-top: 3%;
+}
+
+.formrez{
+    width: 40%; float: left;  padding-left: 7%;
+}
+
+.formrez_1{
+    margin-top: 4%;
+    float: right;
+    width: 40%;
+    margin-right: 10%;
+}
+
+.butonform{
+    margin-left: -28%;
+    width: 22%;
+    height: 34px;
+}
+@media screen and (max-width: 1189px) {
+    .about{
+        float: none;
+        width: 100%;
+    }
+    .responsiv{
+        width: 60%;
+        margin-top: -1.7%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 1236px) {
+    .frumres{
+        float: none;
+        margin: 0 auto;
+        width: 60%;
+    }
+    .displayres{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 822px) {
+    .formrez{
+        width: 80%; float: none;  padding-left: 7%;
+        margin: 0 auto;
+    }
+    .formrez_1{
+        margin-top: 4%;
+        float:none;
+        width: 70%;
+        margin-right: 10%;
+        margin: 0 auto;
+    }
+    .butonform{
+        margin-left:40%;
+        width: 22%;
+        height: 34px;
+    }
+}
